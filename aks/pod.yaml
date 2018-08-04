@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world-2
+  labels:
+    zone: prod
+    version: v1
+spec:
+  containers:
+  - name: hello-ctr
+    image: tutum/hello-world:latest
+    ports:
+    - containerPort: 8080
