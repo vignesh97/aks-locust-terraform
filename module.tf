@@ -17,10 +17,10 @@ module "aks" {
   client_id = "${var.client_id}"
   client_secret = "${var.client_secret}"
   resource_group_name = "${azurerm_resource_group.k8stest.name}"
-  location = "Central US"
+  location = "East US"
   ssh_public_key = "aks/locust.pub"
   source = "aks"
-  agent_count = 1
+  agent_count = 3
   app_replica_count = 3
   app_container_image_url = "vignesh97/simple-webservice:latest"
 }
