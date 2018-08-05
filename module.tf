@@ -26,7 +26,7 @@ module "aks" {
 }
 
 
-/*
+
 module "locust" {
   source = "locust"
   id = "${module.aks.id}"
@@ -35,9 +35,9 @@ module "locust" {
   client_certificate = "${module.aks.client_certificate}"
   cluster_ca_certificate = "${module.aks.cluster_ca_certificate}"
   host = "${module.aks.host}"
-  app_endpoint = "http://${module.aks.load_balancer_ip}:5000"
+  app_endpoint = "http://${module.aks.load_balancer_ip}"
   master_count = "1"
   worker_count = "5"
-  locust_container_image_url = "vignesh97/bm-locust:latest"
+  locust_container_image_url = "vignesh97/loadscript-locust:latest"
 }
-*/
+

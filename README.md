@@ -19,4 +19,6 @@ export TF_VAR_client_secret=${ARM_CLIENT_SECRET}
 terraform init
 terraform plan
 terraform apply
+
+kubectl get nodes,pods,svc
 ```
